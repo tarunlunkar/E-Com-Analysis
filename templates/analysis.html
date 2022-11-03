@@ -1,0 +1,38 @@
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/analysis.css')}}">
+    <script src="https://kit.fontawesome.com/7f6d2012d0.js" ></script>
+</head>
+<title>E-Com Analysis</title>
+<link rel="shortcut icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/3643/3643914.png">
+<body>
+  <!-- <div class="body-container"> -->
+  <!-- <h1>Search bar</h1> -->
+  <!--
+  $text = $_POST["searchbox"];
+  $myfile = fopen("newDoc.txt", "w");
+  fwrite($myfile, $text);
+  fclose($myfile);
+  ?> -->
+
+
+<!-- <p style="font-size:30px; color: white;"><em>A modern solution to your problem.</em></p> -->
+
+
+<div class="container">
+  <!-- <div>
+    <h1 align="center">Data Analysis</h1>
+
+  </div> -->
+  <h2 style="font-size:80px; color:white; margin:2px;font-family:verdana;">Welcome to E-Com Analysis!</h2>
+
+<form action="/" method="POST"  class="search-bar" target="_blank">
+            <input id="link" type="text" placeholder="Paste the link here" name="searchbox">
+            <button type="submit">  <i class="fas fa-search"></i></button>
+</form>
+</div>
+<script src="{{ url_for('static',filename='js/analysis.js')}}">
+
+</script>
+</body>
+</html>
